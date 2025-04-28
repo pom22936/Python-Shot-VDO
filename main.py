@@ -20,10 +20,6 @@ os.makedirs("audio", exist_ok=True)
 os.makedirs("output", exist_ok=True)
 os.makedirs("model_cache", exist_ok=True)
 
-
-
-
-
 # 2. กำหนดเนื้อหาวิดีโอ - แต่ละฉากพร้อมคำบรรยาย
 scenes = [
     {
