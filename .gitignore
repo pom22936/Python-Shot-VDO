@@ -22,6 +22,9 @@ var/
 wheels/
 share/python-wheels/
 model_cache/
+audio/
+images/
+output/
 *.egg-info/
 .installed.cfg
 *.egg
