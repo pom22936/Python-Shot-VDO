@@ -10,11 +10,14 @@ cffi==1.17.1
 charset-normalizer==3.4.1
 click==8.1.8
 colorama==0.4.6
+contourpy==1.3.2
+cycler==0.12.1
 datasets==3.5.0
 decorator==4.4.2
 diffusers==0.33.1
 dill==0.3.8
 filelock==3.18.0
+fonttools==4.57.0
 frozenlist==1.6.0
 fsspec==2024.12.0
 gTTS==2.5.4
@@ -25,10 +28,12 @@ imageio-ffmpeg==0.6.0
 importlib_metadata==8.7.0
 Jinja2==3.1.6
 joblib==1.4.2
+kiwisolver==1.4.8
 lazy_loader==0.4
 librosa==0.11.0
 llvmlite==0.44.0
 MarkupSafe==3.0.2
+matplotlib==3.10.1
 moviepy==1.0.3
 mpmath==1.3.0
 msgpack==1.1.0
@@ -47,6 +52,9 @@ propcache==0.3.1
 psutil==7.0.0
 pyarrow==20.0.0
 pycparser==2.22
+pydub==0.25.1
+pyparsing==3.2.3
+pytesseract==0.3.13
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 pytz==2025.2
