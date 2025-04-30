@@ -1,5 +1,10 @@
 # Python-Shot-VDO
- 
+
+
+# how to install
+pip install -r requirements.txt
+
+# window 
 Download Tesseract OCR installer for Windows:
 Go to https://github.com/UB-Mannheim/tesseract/wiki
 Download the latest version (64-bit) installer (e.g., tesseract-ocr-w64-setup-v5.3.3.20231005.exe)
@@ -18,3 +23,11 @@ Click "Edit"
 Click "New"
 Add the Tesseract installation directory (e.g., C:\Program Files\Tesseract-OCR)
 Click "OK" on all windows
+
+how to run
+
+- image to text
+   python image_to_text.py --image image.png
+
+- create shot vdo
+   python main.py
