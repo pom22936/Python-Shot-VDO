@@ -22,21 +22,31 @@ os.makedirs("model_cache", exist_ok=True)
 
 # 2. กำหนดเนื้อหาวิดีโอ - แต่ละฉากพร้อมคำบรรยาย
 scenes = [
-    {
-        "prompt": "beautiful sunrise over mountain landscape, cinematic lighting",
-        "text": "ธรรมชาติอันงดงามยามเช้า ท่ามกลางขุนเขาสูงตระหง่าน",
-        "duration": 5  # วินาที (ระยะเวลาจะถูกปรับให้เหมาะสมกับเสียงในภายหลัง)
-    },
-    {
-        "prompt": "modern city skyline at night with colorful lights",
-        "text": "หรือจะเป็นเมืองที่เต็มไปด้วยแสงสีในยามค่ำคืน",
-        "duration": 5
-    },
-    {
-        "prompt": "beautiful beach with clear water and palm trees",
-        "text": "หรือหาดทรายขาวละเอียด น้ำทะเลใสราวกับคริสตัล",
-        "duration": 5
-    }
+  {
+    "prompt": "overworked office worker staring at a screen full of unread emails, gray tone, dramatic lighting",
+    "text": "คุณเสียเวลากับการตอบอีเมลซ้ำ ๆ ทุกวันใช่ไหม?",
+    "duration": 5
+  },
+  {
+    "prompt": "workflow automation dashboard with colorful n8n nodes connecting, modern UI",
+    "text": "แค่ส่งอีเมล ระบบจะเข้าใจและจัดการให้แบบอัตโนมัติ",
+    "duration": 5
+  },
+  {
+    "prompt": "split screen of email request, Jira ticket creation, and Jenkins pipeline running",
+    "text": "ขอเปิดสิทธิ์? → สร้าง Ticket + Run Jenkins ทันที",
+    "duration": 5
+  },
+  {
+    "prompt": "automated report system generating and replying to email with attachment",
+    "text": "แค่ส่งอีเมลขอรายงาน ระบบก็จัดให้!",
+    "duration": 5
+  },
+  {
+    "prompt": "clean tech-style promo screen with logo and call to action, futuristic design",
+    "text": "ให้ระบบช่วยจัดการคำขอในอีเมลของคุณ — อัตโนมัติ. แม่นยำ. ปรับแต่งได้",
+    "duration": 5
+  }
 ]
 
 # 3. สร้างภาพด้วย Stable Diffusion
@@ -158,7 +168,7 @@ def create_video():
         video_clips.append(video_with_audio)
     
     # รวม clip ทั้งหมดโดยใช้การเฟดระหว่างคลิป
-    final_clip = concatenate_videoclips(video_clips, method="compose", transition=crossfadein(1.0))
+    final_clip = concatenate_videoclips(video_clips, method="compose") 
     
     # บันทึกวิดีโอ
     print("กำลังบันทึกวิดีโอ...")
